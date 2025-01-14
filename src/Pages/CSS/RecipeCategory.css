@@ -1,0 +1,82 @@
+.recipe-category-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh; /* Full viewport height */
+  display: flex; /* Changed to flexbox for centering */
+  flex-direction: column;
+  align-items: center; /* Centers the content horizontally */
+  justify-content: flex-start; /* Align content to the top */
+  background-color: #f9f9f9; /* Optional background color for contrast */
+  overflow: hidden;
+  padding: 20px;
+}
+.recipe-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 60px; /* Adds a gap between the cards */
+  justify-items: center; /* Centers items horizontally in each grid cell */
+  width: 100%;
+  max-width: 1200px; /* Optional: limits the width of the grid */
+}
+
+.recipe-card {
+  width: 100%; /* Ensures the card takes up the full width of its container */
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: white; /* Optional: background color for the cards */
+}
+.recipe-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-image img {
+  width: 100%; /* Ensures the image takes up the full width of the card */
+  height: 200px; /* Fixed height for the image */
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+  border-radius: 4px; /* Optional: rounds the corners of the image */
+}
+.recipe-image:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+.recipe-title {
+  font-size: 14px; /* Adjust title size for compact layout */
+  margin: 8px 0 4px;
+  color: #333;
+}
+.recipe-description {
+  font-size: 12px; /* Smaller font size for descriptions */
+  color: #666;
+}
+.content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  text-align: center;
+}
+.left-background,
+.right-background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 0;
+}
+.left-background {
+  left: 0;
+}
+.right-background {
+  right: 0;
+}
+.left-background img,
+.right-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

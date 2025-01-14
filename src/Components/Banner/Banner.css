@@ -1,0 +1,11 @@
+.banner-main{
+    width: 100%;
+    height: auto;
+    position: relative;
+    align-items: center;
+}
+.banner-main img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}

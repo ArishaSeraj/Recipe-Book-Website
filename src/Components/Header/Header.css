@@ -1,0 +1,115 @@
+.header {
+    display: flex;
+    align-items: center; /* Vertically centers the items */
+    justify-content: space-between; /* Pushes logo to the left and nav to the middle */
+    padding: 16px;
+    box-shadow: 0 1px 3px -2px black;
+    position: relative;
+    background-color: #fff; /* Optional: Add a background color */
+  }
+  
+  /* Logo Styles */
+.header-logo img {
+    width: 250px; /* Adjust size to fit */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0;
+    cursor: pointer;
+}
+.header-search {
+    flex: 1; /* Makes the search bar take up available space */
+    display: flex;
+    flex-direction: column; 
+    margin: 100px;/* Stack the <p> and input vertically */
+   
+}
+.header-search input {
+    width: 100%; /* Adjust the width of the search bar */
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #ccc; /* Default border */
+    border-radius: 30px; /* Rounded corners */
+    outline: none;
+    transition: all 0.4s ease; /* Smooth transition for all changes */
+    background-color: #f8f8f8;
+}
+  
+.header-search input:hover {
+    border-color: green; /* Change border on hover */
+    background-color: #fff; /* Lighter background on hover */
+}
+  
+.header-search input:focus {
+    border-color: green; /* Border color on focus */
+    background-color: #fff; /* Clear background on focus */
+    box-shadow: 0 0 8px rgba(3, 212, 66, 0.6); /* Glow effect */
+    transform: scale(1.05); /* Slightly enlarge the input on focus */
+}
+  
+  /* Optional: Focus effect with smooth animation */
+.header-search input::placeholder {
+    color: #aaa; /* Lighter placeholder color */
+    transition: color 0.3s ease;
+}
+  
+.header-search input:focus::placeholder {
+    color: green; /* Change placeholder color on focus */
+}
+.header-search button {
+    padding: 6px 12px; /* Increased padding for better size */
+    background-color: #28a745; /* Green background */
+    color: white; /* White text */
+    border: none; /* Removes border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Indicates clickable button */
+    font-size: 16px; /* Increases the font size */
+    transition: background-color 0.3s, transform 0.2s; 
+    margin-left: 40px;/* Adds smooth transition for hover */
+}
+.header-search button:hover {
+    background-color: #2caf49; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+  }
+.header-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding-left: 170px; /* Adds left padding to align properly */
+    gap: 20px; /* Space between items */
+}
+  
+  /* Navigation List Items as Separate Boxes */
+.header-nav li {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    padding: 10px 20px; /* Add space inside each box */
+    border: 1px solid #333; /* Solid border for each box */
+    border-radius: 5px; /* Optional: Rounded corners */
+    background-color: #fff; /* Background color for each box */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+  
+
+.header-nav li:hover {
+    color: green; 
+    border-color: #01be11;
+    background-color: #f8f8f8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+  
+  /* Active State (Light Grey Background) */
+.header-nav li.active {
+    background-color: #d3d3d3; /* Light grey background for active state */
+    color: #333; /* Optional: Keep text color as default */
+    border-color: #333; /* Optional: Keep border as default */
+}
+.header-search button {
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+ 

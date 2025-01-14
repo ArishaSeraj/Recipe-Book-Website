@@ -1,0 +1,61 @@
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+  }
+  
+  .search-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }  
+  .search-results-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh; /* Full viewport height */
+    display: flex; /* Changed to flexbox for centering */
+    flex-direction: column;
+    align-items: center; /* Centers the content horizontally */
+    justify-content: flex-start; /* Align content to the top */
+    background-color: #f9f9f9; /* Optional background color for contrast */
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  .recipes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 60px; /* Adds a gap between the cards */
+    justify-items: center; /* Centers items horizontally in each grid cell */
+    width: 100%;
+    max-width: 1200px; /* Optional: limits the width of the grid */
+  }
+  
+  .recipe-card {
+    width: 100%; /* Ensures the card takes up the full width of its container */
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: white; /* Optional: background color for the cards */
+  }
+  
+  .recipe-card img {
+    width: 100%; /* Ensures the image takes up the full width of the card */
+    height: 200px; /* Fixed height for the image */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+    border-radius: 4px; /* Optional: rounds the corners of the image */
+  }
+  
+  .recipe-card h2 {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  .recipe-card p {
+    font-size: 14px;
+    color: #555;
+  }
+    
